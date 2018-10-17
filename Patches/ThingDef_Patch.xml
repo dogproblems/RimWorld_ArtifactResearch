@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationInsert">
+        <xpath>*/ThingDef[defName="HiTechResearchBench"]/researchPrerequisites</xpath>
+        <value>
+            <inspectorTabs>
+                <li>ITab_Bills</li>
+            </inspectorTabs>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationInsert">
+        <xpath>*/ThingDef[defName="HiTechResearchBench"]/researchPrerequisites</xpath>
+        <value>
+            <building>
+                <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+            </building>
+        </value>
+    </Operation>    
+    <Operation Class="PatchOperationReplace">
+        <xpath>*/ThingDef[defName="HiTechResearchBench"]/thingClass</xpath>
+        <value>
+            <thingClass>ArtifactResearch.Building_ResearchBench</thingClass>
+        </value>        
+    </Operation>
+</Patch>

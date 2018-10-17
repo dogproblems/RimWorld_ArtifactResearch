@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch> 
+    <Operation Class="PatchOperationReplace">
+        <xpath>*/JobDef[defName="Research"]/driverClass</xpath>
+        <value>
+            <driverClass>ArtifactResearch.JobDriver_Research</driverClass>
+        </value>        
+    </Operation>
+</Patch>
