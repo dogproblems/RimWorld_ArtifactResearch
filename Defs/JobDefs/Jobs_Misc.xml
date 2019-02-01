@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <JobDef>
+    <defName>JobReconfigure</defName>
+    <driverClass>ArtifactResearch.JobDriver_Reconfigure</driverClass>
+    <reportString>reconfiguring equipment.</reportString>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  </JobDef>
+ 
+</Defs>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <Operation Class="PatchOperationInsert">
+        <xpath>*/ThingDef[defName="HiTechResearchBench"]/comps/li[last()]</xpath>
+        <value>
+            <li Class="ArtifactResearch.CompProperties_Reconfigurable">
+                <resultDef>ArtifactResearchBench</resultDef>
+            </li>
+        </value>
+    </Operation>
+</Patch>

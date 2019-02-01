@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <WorkGiverDef>
+    <defName>DoBillsResearchArtifact</defName>
+    <label>research artifacts</label>
+    <giverClass>WorkGiver_DoBill</giverClass>
+    <workType>Research</workType>
+    <priorityInType>75</priorityInType>
+    <fixedBillGiverDefs>
+      <li>ArtifactResearchBench</li>
+    </fixedBillGiverDefs>
+    <verb>research</verb>
+    <gerund>researching at</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </WorkGiverDef>
+
+  <WorkGiverDef>
+    <defName>WorkGiverReconfigure</defName>
+    <label>reconfigure equipment</label>
+    <giverClass>ArtifactResearch.WorkGiver_Reconfigure</giverClass>
+    <workType>Research</workType>
+    <priorityInType>125</priorityInType>
+    <verb>reconfigure</verb>
+    <gerund>reconfiguring</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </WorkGiverDef>  
+
+</Defs>

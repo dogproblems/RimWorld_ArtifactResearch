@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RecipeDef>
+		<defName>ResearchArtifact_Archotech</defName>
+		<label>research archotech artifact</label>
+		<description>Analyze an unknown archotech artifact.</description>
+		<jobString>Analyzing archotech artifact.</jobString>
+		<effectWorking>Research</effectWorking>
+		<workAmount>20000</workAmount>
+    <workSpeedStat>ResearchSpeed</workSpeedStat>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>UnknownArtifact</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>UnknownArtifact</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<PsychicInsanityLance>1</PsychicInsanityLance>
+		</products>
+    <skillRequirements>
+      <Intellectual>8</Intellectual>
+    </skillRequirements>    
+	</RecipeDef>
+
+</Defs>
