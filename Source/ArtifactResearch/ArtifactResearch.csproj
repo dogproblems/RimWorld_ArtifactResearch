@@ -34,6 +34,9 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="0Harmony">
+      <HintPath>..\..\Assemblies\0Harmony.dll</HintPath>
+    </Reference>
     <Reference Include="Assembly-CSharp">
       <HintPath>..\..\..\..\RimWorld2059Win64_Data\Managed\Assembly-CSharp.dll</HintPath>
     </Reference>
@@ -50,7 +53,9 @@
   <ItemGroup>
     <Compile Include="CompProperties_Reconfigurable.cs" />
     <Compile Include="CompReconfigurable.cs" />
+    <Compile Include="RecipeDefOf_ResearchArtifact.cs" />
     <Compile Include="DesignationDefOf_Reconfigure.cs" />
+    <Compile Include="HarmonyPatches.cs" />
     <Compile Include="JobDefOf_Reconfigure.cs" />
     <Compile Include="JobDriver_Reconfigure.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

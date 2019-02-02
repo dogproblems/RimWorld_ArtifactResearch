@@ -29,7 +29,8 @@ namespace ArtifactResearch
                 return designation == null;
             });
             yield return Toils_Goto.GotoThing(TargetIndex.A, PathEndMode.InteractionCell);
-            yield return Toils_General.Wait(100, TargetIndex.None);//.FailOnDestroyedNullOrForbidden(TargetIndex.A).FailOnCannotTouch(TargetIndex.A, PathEndMode.Touch);
+            yield return Toils_General.Wait(100, TargetIndex.None).FailOnDestroyedNullOrForbidden(TargetIndex.A).FailOnCannotTouch(TargetIndex.A, PathEndMode.Touch);
+
             Toil finalize = new Toil();
             finalize.initAction = delegate
             {
@@ -42,11 +43,8 @@ namespace ArtifactResearch
                     //replace here
                     ThingWithComps replacement = (ThingWithComps)ThingMaker.MakeThing(comp.Props.resultDef, thing.Stuff);
                     replacement.SetFactionDirect(thing.Faction);
-                    Verse.Log.Warning("thing.Map=" + thing.Map is null ? "NULL" : thing.Map.GetHashCode().ToString());
                     var spawned = GenSpawn.Spawn(replacement, thing.Position, thing.Map, thing.Rotation);
-                    Verse.Log.Warning("HitPoints");
                     spawned.HitPoints = thing.HitPoints;
-                    Verse.Log.Warning("Selector");
                     Find.Selector.Select(spawned, false);
 
                 }
