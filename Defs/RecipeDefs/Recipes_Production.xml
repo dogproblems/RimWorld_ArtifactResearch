@@ -7,7 +7,8 @@
 		<description>Analyze an unknown archotech artifact.</description>
 		<jobString>Analyzing archotech artifact.</jobString>
 		<effectWorking>Research</effectWorking>
-		<workAmount>100000</workAmount>
+		<unfinishedThingDef>UnknownArtifactUnfinished</unfinishedThingDef>
+		<workAmount>10000</workAmount>
     <workSpeedStat>ResearchSpeed</workSpeedStat>
 		<ingredients>
 			<li>
@@ -19,11 +20,6 @@
 				<count>1</count>
 			</li>
 		</ingredients>
-		<fixedIngredientFilter>
-			<thingDefs>
-				<li>UnknownArtifact</li>
-			</thingDefs>
-		</fixedIngredientFilter>
 		<products>
 			<PsychicInsanityLance>4</PsychicInsanityLance>
 			<PsychicShockLance>4</PsychicShockLance>
@@ -42,7 +38,8 @@
 		<description>Analyze an unknown glitterworld artifact.</description>
 		<jobString>Analyzing glitterworld artifact.</jobString>
 		<effectWorking>Research</effectWorking>
-		<workAmount>100000</workAmount>
+		<unfinishedThingDef>UnknownArtifactUnfinished</unfinishedThingDef>
+		<workAmount>10000</workAmount>
     <workSpeedStat>ResearchSpeed</workSpeedStat>
 		<ingredients>
 			<li>
@@ -54,11 +51,6 @@
 				<count>1</count>
 			</li>
 		</ingredients>
-		<fixedIngredientFilter>
-			<thingDefs>
-				<li>UnknownArtifact</li>
-			</thingDefs>
-		</fixedIngredientFilter>
 		<products>
 			<MechSerumNeurotrainer>6</MechSerumNeurotrainer>
 			<TechprofSubpersonaCore>6</TechprofSubpersonaCore>

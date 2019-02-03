@@ -14,9 +14,6 @@
     <thingCategories>
       <li>Artifacts</li>
     </thingCategories>
-    <tradeTags>
-      <li>Artifact</li>
-    </tradeTags>
     <resourceReadoutPriority>Middle</resourceReadoutPriority>
     <stackLimit>1</stackLimit>
     <tradeNeverStack>true</tradeNeverStack>
@@ -28,5 +25,30 @@
     </statBases>
     <drawGUIOverlay>false</drawGUIOverlay>    
   </ThingDef>
+
+  <ThingDef ParentName="UnfinishedBase">
+    <thingClass>UnfinishedThing</thingClass>
+    <defName>UnknownArtifactUnfinished</defName>
+    <label>unknown artifact</label>
+    <description>This ancient device is a badly drawn blob that will be replaced.</description>
+    <graphicData>
+      <texPath>Things/Items/UnknownArtifact</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techLevel>Ultra</techLevel>
+    <thingCategories Inherit="false" >
+      <li>Artifacts</li>
+    </thingCategories>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <stackLimit>1</stackLimit>
+    <tradeNeverStack>true</tradeNeverStack>
+    <useHitPoints>true</useHitPoints>
+    <statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <Mass>0.5</Mass>
+    </statBases>
+    <drawGUIOverlay>false</drawGUIOverlay>    
+    <stuffCategories Inherit="false" />
+  </ThingDef>  
   
 </Defs>
