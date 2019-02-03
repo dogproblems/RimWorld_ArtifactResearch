@@ -7,7 +7,7 @@
 		<description>Analyze an unknown archotech artifact.</description>
 		<jobString>Analyzing archotech artifact.</jobString>
 		<effectWorking>Research</effectWorking>
-		<workAmount>20000</workAmount>
+		<workAmount>100000</workAmount>
     <workSpeedStat>ResearchSpeed</workSpeedStat>
 		<ingredients>
 			<li>
@@ -25,11 +25,51 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<UnknownArtifact>1</UnknownArtifact>
+			<PsychicInsanityLance>4</PsychicInsanityLance>
+			<PsychicShockLance>4</PsychicShockLance>
+			<PsychicAnimalPulser>4</PsychicAnimalPulser>
+			<PsychicSoothePulser>4</PsychicSoothePulser>
+			<AIPersonaCore>1</AIPersonaCore>
 		</products>
     <skillRequirements>
       <Intellectual>8</Intellectual>
     </skillRequirements>    
 	</RecipeDef>
+
+	<RecipeDef>
+		<defName>ResearchArtifact_Glitterworld</defName>
+		<label>research glitterworld artifact</label>
+		<description>Analyze an unknown glitterworld artifact.</description>
+		<jobString>Analyzing glitterworld artifact.</jobString>
+		<effectWorking>Research</effectWorking>
+		<workAmount>100000</workAmount>
+    <workSpeedStat>ResearchSpeed</workSpeedStat>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>UnknownArtifact</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>UnknownArtifact</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<MechSerumNeurotrainer>6</MechSerumNeurotrainer>
+			<TechprofSubpersonaCore>6</TechprofSubpersonaCore>
+			<MechSerumHealer>1</MechSerumHealer>
+			<MechSerumResurrector>1</MechSerumResurrector>
+		</products>
+    <skillRequirements>
+      <Intellectual>8</Intellectual>
+    </skillRequirements>    
+	</RecipeDef>
+
+
 
 </Defs>

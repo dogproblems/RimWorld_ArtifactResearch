@@ -5,7 +5,7 @@
   <ThingDef ParentName="ResourceBase">
     <defName>UnknownArtifact</defName>
     <label>unknown artifact</label>
-    <description>This ancient device clearly came from a Glitterworld, but its purpose remains unclear.</description>
+    <description>This ancient device is a badly drawn blob that will be replaced.</description>
     <graphicData>
       <texPath>Things/Items/UnknownArtifact</texPath>
       <graphicClass>Graphic_Single</graphicClass>

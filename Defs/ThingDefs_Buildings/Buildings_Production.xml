@@ -42,7 +42,7 @@
     </statBases>
     <recipes>
       <li>ResearchArtifact_Archotech</li>
-      <!--<li>ResearchArtifact_Glitterworld</li>-->
+      <li>ResearchArtifact_Glitterworld</li>
     </recipes>  
     <inspectorTabs>
       <li>ITab_Bills</li>

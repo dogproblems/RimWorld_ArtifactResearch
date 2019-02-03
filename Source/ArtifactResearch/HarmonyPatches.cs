@@ -33,13 +33,30 @@ namespace ArtifactResearch
     {
         static bool Prefix(ref RecipeDef recipeDef, ref IEnumerable<Thing> __result)
         {
-            if(recipeDef == RecipeDefOf_ResearchArtifact.ResearchArtifact_Archotech)
+            RecipeDef archo = RecipeDefOf_ResearchArtifact.ResearchArtifact_Archotech;
+            RecipeDef glitter = RecipeDefOf_ResearchArtifact.ResearchArtifact_Glitterworld;
+            if(recipeDef == archo || recipeDef == glitter)
             {
                 List<Thing> result = new List<Thing>();
-                result.Add(ThingMaker.MakeThing(ThingDefOf.PsychicEmanator));
-                Thing hyper = ThingMaker.MakeThing(ThingDefOf.Hyperweave);
-                hyper.stackCount = 25;
-                result.Add(hyper);
+
+                int total = recipeDef.products.Sum(x => x.count);
+                int roll = Verse.Rand.Range(0, total - 1);
+                int idx = 0;
+                while (roll > 0)
+                {
+                    roll -= recipeDef.products[idx].count;
+                    idx++;
+                }
+
+                if(idx<recipeDef.products.Count)
+                {
+                    result.Add(ThingMaker.MakeThing(recipeDef.products[idx].thingDef));
+                    Thing bonus = recipeDef == archo ? ThingMaker.MakeThing(ThingDefOf.Plasteel) : ThingMaker.MakeThing(ThingDefOf.Hyperweave);
+                    bonus.stackCount = 25;
+                    result.Add(bonus);
+
+                }
+
                 __result = result;
                 return false;
             }

@@ -14,6 +14,7 @@ namespace ArtifactResearch
     public static class RecipeDefOf_ResearchArtifact
     {
         public static RecipeDef ResearchArtifact_Archotech;
+        public static RecipeDef ResearchArtifact_Glitterworld;
 
         static RecipeDefOf_ResearchArtifact()
         {
